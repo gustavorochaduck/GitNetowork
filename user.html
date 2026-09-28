@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitNetwork</title>
+    <link rel="shortcut icon" href="_.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search,trophy&display=block" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body class=" flex flex-col  h-screen p-3 bg-white text-black">
+
+    <div id="bg" class="fixed inset-0 -z-10"></div>
+    <header id="topbar" class="flex justify-center sticky top-3 z-10"></header>
+    <h1 id="titulo"> </h1>
+    <script type="module" src="./user.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script>
+        VANTA.CLOUDS({
+            el: "#bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            skyColor: 0x7c9fd2,
+            sunColor: 0xff8000,
+            speed: 1.00
+        })
+    </script>
+    </div>
+    <div class="UserPanel flex flex-col w-full align-center mx-auto m-auto"></div>
+</body>
+</html>
