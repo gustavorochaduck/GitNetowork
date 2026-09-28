@@ -16,7 +16,7 @@ export function CreateTopBar(containerSelector = "#topbar") {
 
   `.replace(/\s+/g, ' ').trim();
     div.innerHTML = `
-    <div class="bg-[image:url('./assets/img/_.jpeg')] bg-cover bg-center h-16 w-16 rounded-xl"></div>
+    <div class="bg-[image:url('/assets/img/_.jpeg')] bg-cover bg-center h-16 w-16 rounded-xl"></div>
     <div class="flex gap-x-10">
       <a href="./index.html" class="flex items-center h-fit gap-x-2">
         <span class="material-symbols-outlined text-[#1e232c]">search</span>
